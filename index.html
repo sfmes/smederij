@@ -15,13 +15,13 @@
             margin: 0;
             padding: 0;
             padding-top: 5px;
-            background-color: grey;
+            background-color: black;
         }
 
         .pin_container {
             margin: 0;
             padding: 0;
-            width: 80vw;
+            width: 95vw;
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
@@ -30,8 +30,6 @@
             grid-template-columns: repeat(auto-fill, var(--card_width));
             grid-auto-rows: var(--row_increment);
             justify-content: center;
-
-            background-color: black;
         }
 
         .card {
@@ -59,11 +57,18 @@
 			object-fit: cover;
 			border-radius: var(--card_border_radius);
 		}
+		
+		.textcontent{
+			text-align: center;
+			color:white;
+		}
 </style>
 </head>
 <body>
-	<h1>Smederij Mes</h1>
-	<p>Portfolio</p>
+<center>
+	<h1 class="textcontent">Smederij Mes</h1>
+	<p class="textcontent">Portfolio</p>
+</center>
 	<div class="pin_container">
         <div class="card card_large"><img src="images/antilopenkopje.jpg" class="img"></div>
         <div class="card card_small"><img src="images/blaadjes.jpg" class="img"></div>
